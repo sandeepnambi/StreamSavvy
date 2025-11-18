@@ -1,16 +1,69 @@
-# React + Vite
+# StreamSavvy – Online Streaming Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StreamSavvy is a web-based OTT streaming application that allows users to browse movies, view details, manage a personal watchlist, and explore content using search and category filters. The project uses JSON-Server as a temporary backend and is designed for future expansion with Node.js and MongoDB.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Dynamic Content Browsing:** Carousels, banners, detailed pages, and interactive UI elements.
+- **Watchlist Management:** Add, update, and remove titles using JSON-Server.
+- **Search & Filtering:** Explore movies by title or genre.
+- **Client-Side Routing:** Smooth page transitions and navigation.
+- **Responsive UI:** Optimized layout for mobile and desktop.
+- **Future Backend Integration:** Planned migration to Node.js and MongoDB.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend**
+- React  
+- Vite  
+- JavaScript (ES6+)  
+- CSS  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend (Temporary)**
+- JSON-Server
+
+**Future Backend**
+- Node.js  
+- Express  
+- MongoDB  
+
+## Project Structure
+
+```bash
+StreamSavvy/
+│── public/
+│── src/
+│ ├── components/
+│ ├── pages/
+│ ├── services/
+│ ├── utils/
+│ ├── App.jsx
+│ ├── main.jsx
+│── db.json
+│── index.html
+│── package.json
+│── vite.config.js
+```
+
+## Environment Variables
+
+To use APIs like TMDB, create a `.env` file:
+
+``
+VITE_TMDB_API_KEY=your_api_key
+``
+
+
+## Future Improvements
+
+Backend integration (Node.js + MongoDB)
+
+User authentication with JWT
+
+API-driven dynamic content
+
+Watch history & recommendations
+
+Production deployment (Vercel/Netlify)
+
