@@ -1,2 +1,0 @@
-StreamSavvy[[:space:]]-[[:space:]]Demonstration[[:space:]]-[[:space:]]Final.mp4 filter=lfs diff=lfs merge=lfs -text
-StreamSavvy_Project_Demonstration.mp4 filter=lfs diff=lfs merge=lfs -text
