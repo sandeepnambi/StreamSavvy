@@ -1,69 +1,84 @@
-# StreamSavvy – Online Streaming Platform
-
-StreamSavvy is a web-based OTT streaming application that allows users to browse movies, view details, manage a personal watchlist, and explore content using search and category filters. The project uses JSON-Server as a temporary backend and is designed for future expansion with Node.js and MongoDB.
+# StreamSavvy - The Ultimate Video Streaming Platform
 
 
-## Features
+**StreamSavvy** is a modern, responsive video streaming application built with **React** and **Vite**. It offers a Netflix-like user experience where users can browse, search, and watch video content categorized by genres. The project utilizes a mock backend (`db.json`) to simulate API responses for dynamic content loading.
 
-- **Dynamic Content Browsing:** Carousels, banners, detailed pages, and interactive UI elements.
-- **Watchlist Management:** Add, update, and remove titles using JSON-Server.
-- **Search & Filtering:** Explore movies by title or genre.
-- **Client-Side Routing:** Smooth page transitions and navigation.
-- **Responsive UI:** Optimized layout for mobile and desktop.
-- **Future Backend Integration:** Planned migration to Node.js and MongoDB.
+## 🚀 Features
 
-## Tech Stack
+* **Responsive UI**: Seamless viewing experience across Desktop, Tablet, and Mobile.
+* **Hero Section**: Dynamic trending content banner with playback controls.
+* **Content Library**: Categorized rows (Trending, Action, Comedy, etc.) sourced from a database.
+* **Video Playback**: Integrated video player with play, pause, and volume controls.
+* **Search Functionality**: Real-time filtering to find movies or shows instantly.
+* **Mock Backend**: Uses `db.json` to simulate REST API endpoints for user data and video metadata.
 
-**Frontend**
-- React  
-- Vite  
-- JavaScript (ES6+)  
-- CSS  
+## 🛠️ Tech Stack
 
-**Backend (Temporary)**
-- JSON-Server
+* **Frontend Framework**: [React.js](https://react.dev/)
+* **Build Tool**: [Vite](https://vitejs.dev/) (High-performance build & HMR)
+* **Styling**: CSS / Styled Components (Responsive Design)
+* **Data Simulation**: JSON Server / Local `db.json`
+* **State Management**: React Hooks (`useState`, `useEffect`)
 
-**Future Backend**
-- Node.js  
-- Express  
-- MongoDB  
-
-## Project Structure
+## 📂 Project Structure
 
 ```bash
 StreamSavvy/
-│── public/
-│── src/
-│ ├── components/
-│ ├── pages/
-│ ├── services/
-│ ├── utils/
-│ ├── App.jsx
-│ ├── main.jsx
-│── db.json
-│── index.html
-│── package.json
-│── vite.config.js
+├── public/              # Static assets (favicons, images)
+├── src/
+│   ├── components/      # Reusable UI components (Navbar, Row, Banner)
+│   ├── pages/           # Main application pages (Home, Player)
+│   ├── App.jsx          # Main application entry point
+│   ├── main.jsx         # DOM rendering
+│   └── index.css        # Global styles
+├── db.json              # Mock database containing video metadata
+├── package.json         # Project dependencies and scripts
+└── vite.config.js       # Vite configuration settings
 ```
+---
 
-## Environment Variables
+## ⚡ Getting Started
 
-To use APIs like TMDB, create a `.env` file:
+Follow these steps to set up the project locally.
 
-``
-VITE_TMDB_API_KEY=your_api_key
-``
+### Prerequisites
+Ensure you have the following installed:
+* [Node.js](https://nodejs.org/) (v14 or higher)
+* npm (Node Package Manager)
 
+### Installation
 
-## Future Improvements
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/kammaullas/StreamSavvy---The-Ultimate-Video-Streaming-Platform.git](https://github.com/kammaullas/StreamSavvy---The-Ultimate-Video-Streaming-Platform.git)
+    cd StreamSavvy---The-Ultimate-Video-Streaming-Platform
+    ```
 
-Backend integration (Node.js + MongoDB)
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-User authentication with JWT
+3.  **Start the Development Server**
+    ```bash
+    npm run dev
+    ```
 
-API-driven dynamic content
+4.  **Start the Mock Backend (Optional)**
+    If the app requires the JSON server to be running separately to fetch data:
+    ```bash
+    npx json-server --watch db.json --port 3000
+    ```
 
-Watch history & recommendations
+5.  **View the App**
+    Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal).
 
-Production deployment (Vercel/Netlify)
+---
 
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<br />
+
+ your browser and navigate to http://localhost:5173 (or the port shown in your terminal).
